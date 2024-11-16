@@ -1,0 +1,177 @@
+[gd_scene format=3 uid="uid://5sesfmnt30b3"]
+
+[node name="AiCardTemplate" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="."]
+clip_contents = true
+custom_minimum_size = Vector2(320, 450)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 310.0
+offset_bottom = 440.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/MarginContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "7"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 3
+bbcode_enabled = true
+text = "[center]Tenebris Clayhorn[/center]"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 3
+bbcode_enabled = true
+text = "[right][color=red]flame[/color][/right]"
+fit_content = true
+
+[node name="MonsterName" type="Label" parent="Panel/MarginContainer/VBoxContainer"]
+visible = false
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+text = "Armoured Zhuk (flame)"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="HSeparator" type="HSeparator" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="AICardDetails" type="RichTextLabel" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer"]
+visible = false
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "[center][color=gray]Choose Target[/color]
+All Enemies[/center]
+"
+fit_content = true
+scroll_active = false
+
+[node name="AICardDetails7" type="RichTextLabel" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer"]
+visible = false
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "[center][color=gray]Choose Target[/color]
+Self[/center]
+"
+fit_content = true
+scroll_active = false
+
+[node name="AICardDetails8" type="RichTextLabel" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "[center][color=gray]Choose Target[/color]
+Highest DEF, Aggro[/center]
+"
+fit_content = true
+scroll_active = false
+
+[node name="HSeparator2" type="HSeparator" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="AICardDetails9" type="RichTextLabel" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "[center][color=gray]Attack Target[/color]
+[color=yellow]Impaling Bite[/color] 3 AP Attack +4
+Attack ignores target's Defence[/center]	"
+fit_content = true
+scroll_active = false
+
+[node name="HSeparator9" type="HSeparator" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer"]
+visible = false
+layout_mode = 2
+
+[node name="AICardDetails11" type="RichTextLabel" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer"]
+visible = false
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "[center][color=gray]Attack Target[/color]
+[color=yellow]Mist[/color] 2 AP Attack +1
+additional[/center]	"
+fit_content = true
+scroll_active = false
+
+[node name="HSeparator8" type="HSeparator" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="AICardDetails2" type="RichTextLabel" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "[center][color=yellow]Ram[/color] 2 AP Attack +2
+Attack ignores target's Defence[/center]	"
+fit_content = true
+scroll_active = false
+
+[node name="HSeparator3" type="HSeparator" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer"]
+visible = false
+layout_mode = 2
+
+[node name="AICardDetails3" type="RichTextLabel" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer"]
+visible = false
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "[center][color=yellow]Burrow[/color] 0 AP
+Additional[/center]"
+fit_content = true
+scroll_active = false
+
+[node name="HSeparator7" type="HSeparator" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="EndTurn" type="Label" parent="Panel/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_vertical = 2
+text = "End Turn"
+horizontal_alignment = 1
+vertical_alignment = 2

@@ -1,0 +1,410 @@
+[gd_scene load_steps=2 format=3 uid="uid://d1xfgp0m6oijq"]
+
+[ext_resource type="Script" path="res://Scripts/enemy_details.gd" id="1_ble13"]
+
+[node name="testnew" type="Control"]
+custom_minimum_size = Vector2(510, 710)
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -255.0
+offset_top = -355.0
+offset_right = 255.0
+offset_bottom = 355.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ble13")
+
+[node name="Panel" type="Panel" parent="."]
+custom_minimum_size = Vector2(510, 710)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel"]
+custom_minimum_size = Vector2(450, 600)
+layout_mode = 0
+offset_right = 461.0
+offset_bottom = 600.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/MarginContainer"]
+custom_minimum_size = Vector2(510, 710)
+layout_mode = 2
+
+[node name="EnemyDropdown" type="OptionButton" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+bbcode_enabled = true
+text = "[center]Enemy Name[/center]"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(320, 0)
+layout_mode = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer2"]
+layout_mode = 2
+alignment = 1
+
+[node name="DrawButton" type="Button" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer2/HBoxContainer2"]
+layout_mode = 2
+text = "Draw Next card"
+
+[node name="ShuffleButton" type="Button" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer2/HBoxContainer2"]
+layout_mode = 2
+text = "Shuffle All Cards"
+
+[node name="NoMoreCardsLabel" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 1
+text = "No More AI Cards"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CardsShuffledLabel" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 1
+text = "Cards Shuffled"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CardDisplay" type="PanelContainer" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer2"]
+custom_minimum_size = Vector2(320, 450)
+layout_direction = 1
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="HSeparator" type="HSeparator" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer2"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer2"]
+layout_mode = 2
+
+[node name="HBoxContainer11" type="HBoxContainer" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer2/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label6" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer2/HBoxContainer/HBoxContainer11"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Freeze"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer2/HBoxContainer/HBoxContainer11"]
+layout_mode = 2
+size_flags_horizontal = 10
+max_value = 20.0
+alignment = 1
+
+[node name="HBoxContainer12" type="HBoxContainer" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer2/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label6" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer2/HBoxContainer/HBoxContainer12"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Poison"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer2/HBoxContainer/HBoxContainer12"]
+layout_mode = 2
+size_flags_horizontal = 10
+max_value = 20.0
+alignment = 1
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer2"]
+layout_mode = 2
+
+[node name="HBoxContainer11" type="HBoxContainer" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer2/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label6" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer2/HBoxContainer3/HBoxContainer11"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Fear"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer2/HBoxContainer3/HBoxContainer11"]
+layout_mode = 2
+size_flags_horizontal = 10
+max_value = 20.0
+alignment = 1
+
+[node name="HBoxContainer12" type="HBoxContainer" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer2/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label6" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer2/HBoxContainer3/HBoxContainer12"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Seal"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer2/HBoxContainer3/HBoxContainer12"]
+layout_mode = 2
+size_flags_horizontal = 10
+max_value = 20.0
+alignment = 1
+
+[node name="Button" type="Button" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer2"]
+layout_mode = 2
+text = "Remove Items at Start of Enemies Turn"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer"]
+layout_mode = 2
+text = "Initial Health"
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer"]
+layout_mode = 2
+text = "20"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer"]
+layout_mode = 2
+text = "Current Health"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Button3" type="Button" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "-"
+
+[node name="Label" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer/HBoxContainer"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+text = "-"
+
+[node name="VSeparator" type="VSeparator" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 29
+text = "20"
+horizontal_alignment = 1
+
+[node name="VSeparator2" type="VSeparator" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="Label3" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer/HBoxContainer"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+text = "+"
+
+[node name="Button" type="Button" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "+"
+
+[node name="Button2" type="Button" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer/HBoxContainer"]
+visible = false
+layout_mode = 2
+
+[node name="HBoxContainer10" type="HBoxContainer" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label6" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer/HBoxContainer10"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Evasion"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer/HBoxContainer10"]
+layout_mode = 2
+size_flags_horizontal = 10
+max_value = 20.0
+alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label4" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer"]
+layout_mode = 2
+text = "Attack"
+horizontal_alignment = 1
+
+[node name="Label5" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer"]
+layout_mode = 2
+text = "2"
+horizontal_alignment = 1
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label6" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Strengthen"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 10
+max_value = 20.0
+alignment = 1
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label6" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Weaken"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 0
+max_value = 20.0
+alignment = 1
+
+[node name="HSeparator2" type="HSeparator" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label6" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer"]
+layout_mode = 2
+text = "Defense"
+horizontal_alignment = 1
+
+[node name="Label7" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer"]
+layout_mode = 2
+text = "2"
+horizontal_alignment = 1
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label6" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Bolster"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+size_flags_horizontal = 0
+max_value = 20.0
+alignment = 1
+
+[node name="HBoxContainer5" type="HBoxContainer" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label6" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer/HBoxContainer5"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Break"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer/HBoxContainer5"]
+layout_mode = 2
+size_flags_horizontal = 0
+max_value = 20.0
+alignment = 1
+
+[node name="HBoxContainer6" type="HBoxContainer" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label6" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer/HBoxContainer6"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Blue Cubes"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer/HBoxContainer6"]
+layout_mode = 2
+size_flags_horizontal = 0
+max_value = 20.0
+alignment = 1
+
+[node name="HSeparator3" type="HSeparator" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label8" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer"]
+layout_mode = 2
+text = "Action Points"
+horizontal_alignment = 1
+
+[node name="Label9" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer"]
+layout_mode = 2
+text = "2"
+horizontal_alignment = 1
+
+[node name="HBoxContainer7" type="HBoxContainer" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label6" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer/HBoxContainer7"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Upkeep"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer/HBoxContainer7"]
+layout_mode = 2
+size_flags_horizontal = 0
+max_value = 20.0
+alignment = 1
+
+[node name="HBoxContainer8" type="HBoxContainer" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label6" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer/HBoxContainer8"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Stun"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer/HBoxContainer8"]
+layout_mode = 2
+size_flags_horizontal = 0
+max_value = 20.0
+alignment = 1
+
+[node name="HBoxContainer9" type="HBoxContainer" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label6" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer/HBoxContainer9"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Green Cubes"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer/HBoxContainer9"]
+layout_mode = 2
+size_flags_horizontal = 0
+max_value = 20.0
+alignment = 1
+
+[node name="HSeparator4" type="HSeparator" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer"]
+layout_mode = 2
+
+[connection signal="pressed" from="Panel/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer2/HBoxContainer2/ShuffleButton" to="." method="_on_shuffle_button_pressed"]

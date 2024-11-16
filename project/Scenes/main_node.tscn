@@ -1,0 +1,410 @@
+[gd_scene load_steps=3 format=3 uid="uid://cnm2bm245cwrm"]
+
+[ext_resource type="Script" path="res://Scripts/main_node.gd" id="1_se47x"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7gbyq"]
+bg_color = Color(0.537011, 0.537011, 0.537011, 1)
+
+[node name="MainNode" type="Node2D"]
+script = ExtResource("1_se47x")
+metadata/_edit_horizontal_guides_ = [1664.0, 1000.0]
+metadata/_edit_vertical_guides_ = [1304.0, 1400.0]
+
+[node name="Detail" type="Label" parent="."]
+offset_left = 616.0
+offset_top = 8.0
+offset_right = 750.0
+offset_bottom = 56.0
+theme_override_colors/font_color = Color(0.821911, 2.62313e-06, 7.70092e-07, 1)
+theme_override_font_sizes/font_size = 28
+text = "Ambush"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BigScroll" type="ScrollContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 38.0
+offset_top = 56.0
+offset_right = 1362.0
+offset_bottom = 1136.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+follow_focus = true
+
+[node name="BigBoxVert" type="VBoxContainer" parent="BigScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Row1" type="HBoxContainer" parent="BigScroll/BigBoxVert"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="PanelIVBox" type="VBoxContainer" parent="BigScroll/BigBoxVert/Row1"]
+layout_mode = 2
+
+[node name="PanelILabel" type="RichTextLabel" parent="BigScroll/BigBoxVert/Row1/PanelIVBox"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+bbcode_enabled = true
+text = "[center][b]Position I[/b]"
+fit_content = true
+
+[node name="PanelI" type="Panel" parent="BigScroll/BigBoxVert/Row1/PanelIVBox"]
+custom_minimum_size = Vector2(656, 504)
+layout_mode = 2
+
+[node name="VSeparator" type="VSeparator" parent="BigScroll/BigBoxVert/Row1"]
+layout_mode = 2
+
+[node name="PanelIIBox" type="VBoxContainer" parent="BigScroll/BigBoxVert/Row1"]
+layout_mode = 2
+
+[node name="PanelIILabel" type="RichTextLabel" parent="BigScroll/BigBoxVert/Row1/PanelIIBox"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+bbcode_enabled = true
+text = "[center][b]Position II[/b]"
+fit_content = true
+
+[node name="PanelII" type="Panel" parent="BigScroll/BigBoxVert/Row1/PanelIIBox"]
+custom_minimum_size = Vector2(656, 504)
+layout_mode = 2
+
+[node name="Row2" type="HBoxContainer" parent="BigScroll/BigBoxVert"]
+layout_mode = 2
+size_flags_vertical = 3
+alignment = 1
+
+[node name="PanelIIIBox" type="VBoxContainer" parent="BigScroll/BigBoxVert/Row2"]
+layout_mode = 2
+
+[node name="PanelIIILabel" type="RichTextLabel" parent="BigScroll/BigBoxVert/Row2/PanelIIIBox"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+bbcode_enabled = true
+text = "[center][b]Position III[/b]"
+fit_content = true
+
+[node name="PanelIII" type="Panel" parent="BigScroll/BigBoxVert/Row2/PanelIIIBox"]
+custom_minimum_size = Vector2(656, 504)
+layout_mode = 2
+
+[node name="VSeparator" type="VSeparator" parent="BigScroll/BigBoxVert/Row2"]
+layout_mode = 2
+
+[node name="PanelIVBox" type="VBoxContainer" parent="BigScroll/BigBoxVert/Row2"]
+layout_mode = 2
+
+[node name="PanelIVLabel" type="RichTextLabel" parent="BigScroll/BigBoxVert/Row2/PanelIVBox"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+bbcode_enabled = true
+text = "[center][b]Position IV[/b]"
+fit_content = true
+
+[node name="PanelIV" type="Panel" parent="BigScroll/BigBoxVert/Row2/PanelIVBox"]
+custom_minimum_size = Vector2(656, 504)
+layout_mode = 2
+
+[node name="EnemyNotFound" type="AcceptDialog" parent="."]
+title = "Note"
+initial_position = 1
+
+[node name="MessageLabel" type="RichTextLabel" parent="EnemyNotFound"]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 92.0
+offset_bottom = 55.0
+bbcode_enabled = true
+fit_content = true
+autowrap_mode = 0
+
+[node name="MessageDisplay" type="RichTextLabel" parent="."]
+offset_left = 568.0
+offset_top = 27.0
+offset_right = 896.0
+offset_bottom = 152.0
+bbcode_enabled = true
+scroll_following = true
+
+[node name="SettingsButton" type="Button" parent="."]
+offset_left = 24.0
+offset_top = 8.0
+offset_right = 92.0
+offset_bottom = 35.0
+text = "Settings"
+flat = true
+
+[node name="Background" type="Panel" parent="."]
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="SettingsDialog" type="AcceptDialog" parent="."]
+title = "Settings"
+position = Vector2i(46, 36)
+size = Vector2i(277, 700)
+ok_button_text = ""
+dialog_hide_on_ok = false
+
+[node name="SettingsContainer" type="VBoxContainer" parent="SettingsDialog"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = -8.0
+offset_bottom = -26.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 1
+
+[node name="Panel" type="Panel" parent="SettingsDialog/SettingsContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_7gbyq")
+
+[node name="MarginContainer" type="MarginContainer" parent="SettingsDialog/SettingsContainer/Panel"]
+layout_mode = 2
+offset_top = 4.0
+offset_right = 256.0
+offset_bottom = 544.0
+size_flags_vertical = 3
+theme_override_constants/margin_left = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="SettingsDialog/SettingsContainer/Panel/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="SettingsDialog/SettingsContainer/Panel/MarginContainer/VBoxContainer"]
+visible = false
+layout_mode = 2
+text = "Settings"
+horizontal_alignment = 1
+
+[node name="HSeparator4" type="HSeparator" parent="SettingsDialog/SettingsContainer/Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="AutoSelectContainer" type="VBoxContainer" parent="SettingsDialog/SettingsContainer/Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="AutomaticEnemyLabel" type="Label" parent="SettingsDialog/SettingsContainer/Panel/MarginContainer/VBoxContainer/AutoSelectContainer"]
+layout_mode = 2
+text = "Automatic Enemy Selection"
+horizontal_alignment = 1
+
+[node name="ChapterMenu" type="OptionButton" parent="SettingsDialog/SettingsContainer/Panel/MarginContainer/VBoxContainer/AutoSelectContainer"]
+layout_mode = 2
+allow_reselect = true
+
+[node name="NodeMenu" type="OptionButton" parent="SettingsDialog/SettingsContainer/Panel/MarginContainer/VBoxContainer/AutoSelectContainer"]
+layout_mode = 2
+allow_reselect = true
+
+[node name="SkullsMenu" type="OptionButton" parent="SettingsDialog/SettingsContainer/Panel/MarginContainer/VBoxContainer/AutoSelectContainer"]
+layout_mode = 2
+allow_reselect = true
+
+[node name="AutoPopulateEnemiesButton" type="Button" parent="SettingsDialog/SettingsContainer/Panel/MarginContainer/VBoxContainer/AutoSelectContainer"]
+layout_mode = 2
+text = "Populate Enemies"
+
+[node name="HSeparator" type="HSeparator" parent="SettingsDialog/SettingsContainer/Panel/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+
+[node name="ManualSelection" type="VBoxContainer" parent="SettingsDialog/SettingsContainer/Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Container1" type="HBoxContainer" parent="SettingsDialog/SettingsContainer/Panel/MarginContainer/VBoxContainer/ManualSelection"]
+layout_mode = 2
+alignment = 1
+
+[node name="ManualSelectionLabel" type="Label" parent="SettingsDialog/SettingsContainer/Panel/MarginContainer/VBoxContainer/ManualSelection/Container1"]
+layout_mode = 2
+size_flags_vertical = 1
+text = "Manual Enemy Selection"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Container2" type="HBoxContainer" parent="SettingsDialog/SettingsContainer/Panel/MarginContainer/VBoxContainer/ManualSelection"]
+visible = false
+layout_mode = 2
+alignment = 2
+
+[node name="ManualSelectionLabelforI" type="Label" parent="SettingsDialog/SettingsContainer/Panel/MarginContainer/VBoxContainer/ManualSelection/Container2"]
+layout_mode = 2
+text = "Position I"
+
+[node name="ManualDropforI" type="OptionButton" parent="SettingsDialog/SettingsContainer/Panel/MarginContainer/VBoxContainer/ManualSelection/Container2"]
+visible = false
+layout_mode = 2
+
+[node name="ManualSelectionLabelforII" type="Label" parent="SettingsDialog/SettingsContainer/Panel/MarginContainer/VBoxContainer/ManualSelection/Container2"]
+visible = false
+layout_mode = 2
+text = "Position II"
+
+[node name="ManualDropforII" type="OptionButton" parent="SettingsDialog/SettingsContainer/Panel/MarginContainer/VBoxContainer/ManualSelection/Container2"]
+visible = false
+layout_mode = 2
+
+[node name="EnemySelection" type="OptionButton" parent="SettingsDialog/SettingsContainer/Panel/MarginContainer/VBoxContainer/ManualSelection/Container2"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="SettingsDialog/SettingsContainer/Panel/MarginContainer/VBoxContainer/ManualSelection"]
+layout_mode = 2
+
+[node name="LabelforEnemySelection" type="Label" parent="SettingsDialog/SettingsContainer/Panel/MarginContainer/VBoxContainer/ManualSelection/VBoxContainer"]
+visible = false
+layout_mode = 2
+text = "Enemy"
+
+[node name="EnemySelection" type="OptionButton" parent="SettingsDialog/SettingsContainer/Panel/MarginContainer/VBoxContainer/ManualSelection/VBoxContainer"]
+layout_mode = 2
+
+[node name="LabelForSkullSelection" type="Label" parent="SettingsDialog/SettingsContainer/Panel/MarginContainer/VBoxContainer/ManualSelection/VBoxContainer"]
+visible = false
+layout_mode = 2
+text = "Stars"
+
+[node name="StarSelection" type="OptionButton" parent="SettingsDialog/SettingsContainer/Panel/MarginContainer/VBoxContainer/ManualSelection/VBoxContainer"]
+layout_mode = 2
+
+[node name="LabelForPositionSelection" type="Label" parent="SettingsDialog/SettingsContainer/Panel/MarginContainer/VBoxContainer/ManualSelection/VBoxContainer"]
+visible = false
+layout_mode = 2
+text = "Position"
+
+[node name="PositionSelection" type="OptionButton" parent="SettingsDialog/SettingsContainer/Panel/MarginContainer/VBoxContainer/ManualSelection/VBoxContainer"]
+layout_mode = 2
+
+[node name="VSeparator" type="VSeparator" parent="SettingsDialog/SettingsContainer/Panel/MarginContainer/VBoxContainer/ManualSelection/VBoxContainer"]
+visible = false
+layout_mode = 2
+
+[node name="ManualPopulateEnemyButton" type="Button" parent="SettingsDialog/SettingsContainer/Panel/MarginContainer/VBoxContainer/ManualSelection/VBoxContainer"]
+layout_mode = 2
+text = "Add Enemy"
+
+[node name="Container4" type="HBoxContainer" parent="SettingsDialog/SettingsContainer/Panel/MarginContainer/VBoxContainer/ManualSelection"]
+visible = false
+layout_mode = 2
+alignment = 1
+
+[node name="HSeparator3" type="HSeparator" parent="SettingsDialog/SettingsContainer/Panel/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ChipToggle" type="VBoxContainer" parent="SettingsDialog/SettingsContainer/Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Toggle Label2" type="Label" parent="SettingsDialog/SettingsContainer/Panel/MarginContainer/VBoxContainer/ChipToggle"]
+layout_mode = 2
+text = "Chip Tracking Visibilty"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="SettingsDialog/SettingsContainer/Panel/MarginContainer/VBoxContainer/ChipToggle"]
+layout_mode = 2
+alignment = 1
+
+[node name="Toggle Label" type="Label" parent="SettingsDialog/SettingsContainer/Panel/MarginContainer/VBoxContainer/ChipToggle/HBoxContainer"]
+layout_mode = 2
+text = "Off"
+
+[node name="Toggle" type="CheckButton" parent="SettingsDialog/SettingsContainer/Panel/MarginContainer/VBoxContainer/ChipToggle/HBoxContainer"]
+layout_mode = 2
+button_pressed = true
+
+[node name="Toggle Label2" type="Label" parent="SettingsDialog/SettingsContainer/Panel/MarginContainer/VBoxContainer/ChipToggle/HBoxContainer"]
+layout_mode = 2
+text = "On"
+
+[node name="HSeparator2" type="HSeparator" parent="SettingsDialog/SettingsContainer/Panel/MarginContainer/VBoxContainer"]
+visible = false
+layout_mode = 2
+
+[node name="ResetBoxes" type="VBoxContainer" parent="SettingsDialog/SettingsContainer/Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="SettingsDialog/SettingsContainer/Panel/MarginContainer/VBoxContainer/ResetBoxes"]
+layout_mode = 2
+
+[node name="HSeparator" type="HSeparator" parent="SettingsDialog/SettingsContainer/Panel/MarginContainer/VBoxContainer/ResetBoxes/VBoxContainer2"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="SettingsDialog/SettingsContainer/Panel/MarginContainer/VBoxContainer/ResetBoxes/VBoxContainer2"]
+layout_mode = 2
+
+[node name="RemoveI" type="Button" parent="SettingsDialog/SettingsContainer/Panel/MarginContainer/VBoxContainer/ResetBoxes/VBoxContainer2/HBoxContainer"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 8
+theme_override_font_sizes/font_size = 11
+text = "Remove Position I"
+autowrap_mode = 2
+
+[node name="RemoveII" type="Button" parent="SettingsDialog/SettingsContainer/Panel/MarginContainer/VBoxContainer/ResetBoxes/VBoxContainer2/HBoxContainer"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 8
+theme_override_font_sizes/font_size = 10
+text = "Remove Position II"
+autowrap_mode = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="SettingsDialog/SettingsContainer/Panel/MarginContainer/VBoxContainer/ResetBoxes/VBoxContainer2"]
+layout_mode = 2
+
+[node name="RemoveIII" type="Button" parent="SettingsDialog/SettingsContainer/Panel/MarginContainer/VBoxContainer/ResetBoxes/VBoxContainer2/HBoxContainer2"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 8
+theme_override_font_sizes/font_size = 10
+text = "Remove Position III"
+autowrap_mode = 2
+
+[node name="RemoveIV" type="Button" parent="SettingsDialog/SettingsContainer/Panel/MarginContainer/VBoxContainer/ResetBoxes/VBoxContainer2/HBoxContainer2"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 8
+theme_override_font_sizes/font_size = 10
+text = "Pemove Position IV"
+autowrap_mode = 2
+
+[node name="VSeparator" type="VSeparator" parent="SettingsDialog/SettingsContainer/Panel/MarginContainer/VBoxContainer/ResetBoxes/VBoxContainer2"]
+visible = false
+layout_mode = 2
+
+[node name="Container3" type="HBoxContainer" parent="SettingsDialog/SettingsContainer/Panel/MarginContainer/VBoxContainer/ResetBoxes"]
+layout_mode = 2
+size_flags_vertical = 8
+alignment = 1
+
+[node name="RemoveAll" type="Button" parent="SettingsDialog/SettingsContainer/Panel/MarginContainer/VBoxContainer/ResetBoxes/Container3"]
+layout_mode = 2
+text = "Reset All"
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+visible = false
+offset_right = 40.0
+offset_bottom = 40.0
+
+[connection signal="toggled" from="SettingsDialog/SettingsContainer/Panel/MarginContainer/VBoxContainer/ChipToggle/HBoxContainer/Toggle" to="." method="_on_toggle_toggled"]
