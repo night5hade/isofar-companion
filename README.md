@@ -9,10 +9,11 @@ By using this application players can forego using the Enemy Dashboards or Enemy
 
 
 ## How to Install
-The Application can be run from a website: [https://gavinctaylor.github.io/Isofar-Companion/index.html](https://gavinctaylor.github.io/Isofar-Companion/index.html) or downloaded. To download:
+The Application can be run from a website: [https://gavinctaylor.github.io/Isofar-Companion/index.html](https://gavinctaylor.github.io/Isofar-Companion/index.html) or downloaded. <br>To download:
 - Mac OS: [https://github.com/gavinctaylor/Isofar-Companion/blob/01ec3030ffac2a1266990518bf5eb4ecf556397a/project/Builds/MacOS/Isofar%20Companion%20V5.dmg](here)
-- Windows OS (here) **Coming Soon
-
+- Windows OS [https://github.com/gavinctaylor/Isofar-Companion/blob/main/project/Builds/Windows/IsofarCompanion.exe](here)
+- Linux OS [https://github.com/gavinctaylor/Isofar-Companion/blob/main/project/Builds/Linux/IsofarCompanion.x86_64](here)
+Or check the 'Builds' folder of the project
 
 
 
@@ -78,7 +79,7 @@ Players can:
 For players who wish to track Chips on Enemies manually (by using the Enemy Stat card wnd the cips they pull from their bags), the Spinboxes for tracking chips can be removed. Select Settings and turn Chip Tracking Visibility to Off.   
 
 ## About
-This app was built using the Godot Engine
+This app was built using the Godot Engine. All of the code is open source and available here on this GitHub. Feel free to fork or steal to make this version better, or a better version entirely.
 
 ### Future Updates
 
@@ -86,7 +87,6 @@ Future Updates *will* include:
 - Addition of Chapter 3 and Chapter 4 
 
 Future Updates *may* include:
-- Support for Addiiotinal Operating Systems
 - Support to change default Positions so that III and IV are on the top row
 - Support to move enemies once positioned
 - Support for Locked / Spoiler Enemies
