@@ -5,6 +5,8 @@ signal toggled
 var touch_points = {}  # Stores active touch points
 var initial_distance: float = 0.0  # Distance between two fingers at the start of a pinch
 var initial_scale: Vector2  # Initial scale of the node
+var last_pan_position: Vector2 = Vector2.ZERO  # Tracks the last pan position
+
 
 var chapter_dropdown: OptionButton
 var skulls_dropdown: OptionButton
@@ -159,6 +161,14 @@ func _input(event):
 		if event.index in touch_points:
 			touch_points[event.index] = event.position
 		
+				# Handle single-finger drag for panning
+		if touch_points.size() == 1:
+			var drag_position = event.position
+			if last_pan_position != Vector2.ZERO:
+				var pan_delta = drag_position - last_pan_position
+				self.position += pan_delta  # Adjust the node's position based on drag
+			last_pan_position = drag_position
+		
 	# Handle pinch zoom when two fingers are active
 	if touch_points.size() == 2:
 		var keys = touch_points.keys()
@@ -176,12 +186,12 @@ func _input(event):
 			# Apply the scale factor
 			self.scale = initial_scale * scale_factor
 	
-	# Reset scale tracking when touch points reduce to less than 2
-	if touch_points.size() < 2 and initial_distance != 0.0:
-		initial_scale = self.scale
-		initial_distance = 0.0
-
-
+	# Reset zoom and pan state when touch points reduce
+	if touch_points.size() < 2:
+		if initial_distance != 0.0:
+			initial_scale = self.scale
+			initial_distance = 0.0
+		last_pan_position = Vector2.ZERO
 
 
 
