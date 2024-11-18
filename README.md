@@ -69,7 +69,7 @@ Chips can be added to enemies using their appropriate spinboxes. Chips are typic
 Players can:
 - Draw enemy AI Cards
 - Decrease AP Value
-  -   NOTE: The AP Value will continue to decrease until the Enemy has no more AP. IF an enemy has Green Cubes this WILL allow the Enemy AP to continue to the negative value of the numebr of Green Cubes.
+  -   NOTE: The AP Value will continue to decrease until the Enemy has no more AP. IF an enemy has Green Cubes this WILL allow the Enemy AP to continue to the negative value of the number of Green Cubes.
   -   i.e. If an enemy has 3 AP and 2 Green Cubes, the player can decrease the AP value 5 times, from 3 to -2.
 - Reset the AP value (once they have completed their actions) - Reset Button next to the Action Points 
 - Reset the chips and Blue Cube Values - Reset Button under the Draw Enemy AI Card button
