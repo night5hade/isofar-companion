@@ -43,9 +43,9 @@ The appropriate Enemies will appear in their positions. If any enemies are alrea
 3. Select Add Enemy
 4. (optional) This can be repeated to add additional enemies
 
-The Enemy will appear in the postiion specified. If an enemy are already in that position it will be replaced. If you select an enemy configuration that does not exists (i.e. a 1 Star Corrupted Priest), a message will notify you that this enemy is not available.
+The Enemy will appear in the position specified. If an enemy are already in that position it will be replaced. If you select an enemy configuration that does not exists (i.e. a 1 Star Corrupted Priest), a message will notify you that this enemy is not available.
 
-Once enemies are popultaed their Name, Rewards, Initial Stat Values, and their 8 AI cards will be shuffled ready for drawing. 
+Once enemies are populated their Name, Rewards, Initial Stat Values, and their 8 AI cards will be shuffled ready for drawing. 
 
 
 ## During Combat
@@ -76,7 +76,7 @@ Players can:
 - Undo the most recent drawn card (This will allow players to view the next enemy AI Card)
 - Shuffle the enemy AI Deck - Can be done at any time. The player will be notified when the number of remaining cards is zero.
 
-For players who wish to track Chips on Enemies manually (by using the Enemy Stat card wnd the cips they pull from their bags), the Spinboxes for tracking chips can be removed. Select Settings and turn Chip Tracking Visibility to Off.   
+For players who wish to track Chips on Enemies manually (by using the Enemy Stat card and the chips they pull from their bags), the Spinboxes for tracking chips can be removed. Select Settings and turn Chip Tracking Visibility to Off.   
 
 ## About
 This app was built using the Godot Engine. All of the code is open source and available here on this GitHub. Feel free to fork or steal to make this version better, or a better version entirely.
