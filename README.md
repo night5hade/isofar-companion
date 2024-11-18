@@ -30,6 +30,8 @@ Players can use either or both methods to populate enemies. Anytime an enemy pop
 2. Select the values for Chapter, Node, and Skulls from the drop-down menus
 3. Select Populate Enemies
 
+Note: Only Enemy Configurations from Chapters 1 and 2 are currently available
+
 The appropriate Enemies will appear in their positions. If any enemies are already in those positions they will be replaced. If the combat is designated as an Ambush, this will appear at the top of the application (in Red).
 If you select an enemy configuration that does not exists (i.e. a 1 Star Corrupted Priest), a message will notify you that this enemy is not available.
 
@@ -79,7 +81,11 @@ For players who wish to track Chips on Enemies manually (by using the Enemy Stat
 This app was built using the Godot Engine
 
 ### Future Updates
-Future Updates may include:
+
+Future Updates *will* include:
+- Addition of Chapter 3 and Chapter 4 
+
+Future Updates *may* include:
 - Support for Addiiotinal Operating Systems
 - Support to change default Positions so that III and IV are on the top row
 - Support to move enemies once positioned
