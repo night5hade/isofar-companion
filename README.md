@@ -50,7 +50,7 @@ Once enemies are popultaed their Name, Rewards, Initial Stat Values, and their 8
 
 ## During Combat
 
-### Adjusting Values**
+### Adjusting Values
 
 The following values can be adjusted:
 - Health
