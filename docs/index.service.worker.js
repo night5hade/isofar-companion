@@ -4,7 +4,7 @@
 // Incrementing CACHE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
 /** @type {string} */
-const CACHE_VERSION = '1731940954|120424066';
+const CACHE_VERSION = '1731951228|85650141';
 /** @type {string} */
 const CACHE_PREFIX = 'Isofar Companion-sw-cache-';
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;
