@@ -34,7 +34,7 @@ Players can use either or both methods to populate enemies. Anytime an enemy pop
 Note: Only Enemy Configurations from Chapters 1 and 2 are currently available
 
 The appropriate Enemies will appear in their positions. If any enemies are already in those positions they will be replaced. If the combat is designated as an Ambush, this will appear at the top of the application (in Red).
-If you select an enemy configuration that does not exists (i.e. a 1 Star Corrupted Priest), a message will notify you that this enemy is not available.
+
 
 ### Manually Populating Enemies
 
@@ -43,9 +43,9 @@ If you select an enemy configuration that does not exists (i.e. a 1 Star Corrupt
 3. Select Add Enemy
 4. (optional) This can be repeated to add additional enemies
 
-The Enemy will appear in the postiion specified. If an enemy are already in that position it will be replaced.
+The Enemy will appear in the postiion specified. If an enemy are already in that position it will be replaced. If you select an enemy configuration that does not exists (i.e. a 1 Star Corrupted Priest), a message will notify you that this enemy is not available.
 
-Once enemies are popultaed their Name, Rewards, Initial Stat Values, and their 8 AI cards will be shuffled ready for drawing.
+Once enemies are popultaed their Name, Rewards, Initial Stat Values, and their 8 AI cards will be shuffled ready for drawing. 
 
 
 ## During Combat
