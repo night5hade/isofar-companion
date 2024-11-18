@@ -9,10 +9,11 @@ By using this application players can forego using the Enemy Dashboards or Enemy
 
 
 ## How to Install
-The Application can be run from a website: [https://gavinctaylor.github.io/Isofar-Companion/index.html](https://gavinctaylor.github.io/Isofar-Companion/index.html) or downloaded. To download:
+The Application can be run from a website: [https://gavinctaylor.github.io/Isofar-Companion/index.html](https://gavinctaylor.github.io/Isofar-Companion/index.html) or downloaded. <br>To download:
 - Mac OS: [https://github.com/gavinctaylor/Isofar-Companion/blob/01ec3030ffac2a1266990518bf5eb4ecf556397a/project/Builds/MacOS/Isofar%20Companion%20V5.dmg](here)
-- Windows OS (here) **Coming Soon
-
+- Windows OS [https://github.com/gavinctaylor/Isofar-Companion/blob/main/project/Builds/Windows/IsofarCompanion.exe](here)
+- Linux OS [https://github.com/gavinctaylor/Isofar-Companion/blob/main/project/Builds/Linux/IsofarCompanion.x86_64](here)
+<br>Or check the 'Builds' folder of the project
 
 
 
@@ -33,7 +34,7 @@ Players can use either or both methods to populate enemies. Anytime an enemy pop
 Note: Only Enemy Configurations from Chapters 1 and 2 are currently available
 
 The appropriate Enemies will appear in their positions. If any enemies are already in those positions they will be replaced. If the combat is designated as an Ambush, this will appear at the top of the application (in Red).
-If you select an enemy configuration that does not exists (i.e. a 1 Star Corrupted Priest), a message will notify you that this enemy is not available.
+
 
 ### Manually Populating Enemies
 
@@ -42,14 +43,14 @@ If you select an enemy configuration that does not exists (i.e. a 1 Star Corrupt
 3. Select Add Enemy
 4. (optional) This can be repeated to add additional enemies
 
-The Enemy will appear in the postiion specified. If an enemy are already in that position it will be replaced.
+The Enemy will appear in the position specified. If an enemy are already in that position it will be replaced. If you select an enemy configuration that does not exists (i.e. a 1 Star Corrupted Priest), a message will notify you that this enemy is not available.
 
-Once enemies are popultaed their Name, Rewards, Initial Stat Values, and their 8 AI cards will be shuffled ready for drawing.
+Once enemies are populated their Name, Rewards, Initial Stat Values, and their 8 AI cards will be shuffled ready for drawing. 
 
 
 ## During Combat
 
-### Adjusting Values**
+### Adjusting Values
 
 The following values can be adjusted:
 - Health
@@ -68,17 +69,17 @@ Chips can be added to enemies using their appropriate spinboxes. Chips are typic
 Players can:
 - Draw enemy AI Cards
 - Decrease AP Value
-  -   NOTE: The AP Value will continue to decrease until the Enemy has no more AP. IF an enemy has Green Cubes this WILL allow the Enemy AP to continue to the negative value of the numebr of Green Cubes.
+  -   NOTE: The AP Value will continue to decrease until the Enemy has no more AP. IF an enemy has Green Cubes this WILL allow the Enemy AP to continue to the negative value of the number of Green Cubes.
   -   i.e. If an enemy has 3 AP and 2 Green Cubes, the player can decrease the AP value 5 times, from 3 to -2.
 - Reset the AP value (once they have completed their actions) - Reset Button next to the Action Points 
 - Reset the chips and Blue Cube Values - Reset Button under the Draw Enemy AI Card button
 - Undo the most recent drawn card (This will allow players to view the next enemy AI Card)
 - Shuffle the enemy AI Deck - Can be done at any time. The player will be notified when the number of remaining cards is zero.
 
-For players who wish to track Chips on Enemies manually (by using the Enemy Stat card wnd the cips they pull from their bags), the Spinboxes for tracking chips can be removed. Select Settings and turn Chip Tracking Visibility to Off.   
+For players who wish to track Chips on Enemies manually (by using the Enemy Stat card and the chips they pull from their bags), the Spinboxes for tracking chips can be removed. Select Settings and turn Chip Tracking Visibility to Off.   
 
 ## About
-This app was built using the Godot Engine
+This app was built using the Godot Engine. All of the code is open source and available here on this GitHub. Feel free to fork or steal to make this version better, or a better version entirely.
 
 ### Future Updates
 
@@ -86,7 +87,6 @@ Future Updates *will* include:
 - Addition of Chapter 3 and Chapter 4 
 
 Future Updates *may* include:
-- Support for Addiiotinal Operating Systems
 - Support to change default Positions so that III and IV are on the top row
 - Support to move enemies once positioned
 - Support for Locked / Spoiler Enemies
