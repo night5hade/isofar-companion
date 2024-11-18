@@ -10,7 +10,7 @@ By using this application players can forego using the Enemy Dashboards or Enemy
 
 ## How to Install
 The Application can be run from a website: [https://gavinctaylor.github.io/Isofar-Companion/index.html](https://gavinctaylor.github.io/Isofar-Companion/index.html) or downloaded. <br>To download:
-- Mac OS: [https://github.com/gavinctaylor/Isofar-Companion/blob/main/project/Builds/Windows/IsofarCompanion.exe](here)
+- Mac OS: [https://github.com/gavinctaylor/Isofar-Companion/blob/main/project/Builds/MacOS/IsofarCompanion.dmg](here)
 - Windows OS [https://github.com/gavinctaylor/Isofar-Companion/blob/main/project/Builds/Windows/IsofarCompanion.exe](here)
 - Linux OS [https://github.com/gavinctaylor/Isofar-Companion/tree/main/project/Builds/Linux](here)
 <br>Or check the 'Builds' folder of the project
