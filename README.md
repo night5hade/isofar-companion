@@ -13,7 +13,7 @@ The Application can be run from a website: [https://gavinctaylor.github.io/Isofa
 - Mac OS: [https://github.com/gavinctaylor/Isofar-Companion/blob/01ec3030ffac2a1266990518bf5eb4ecf556397a/project/Builds/MacOS/Isofar%20Companion%20V5.dmg](here)
 - Windows OS [https://github.com/gavinctaylor/Isofar-Companion/blob/main/project/Builds/Windows/IsofarCompanion.exe](here)
 - Linux OS [https://github.com/gavinctaylor/Isofar-Companion/blob/main/project/Builds/Linux/IsofarCompanion.x86_64](here)
-Or check the 'Builds' folder of the project
+<br>Or check the 'Builds' folder of the project
 
 
 
