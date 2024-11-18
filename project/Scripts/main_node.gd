@@ -2,6 +2,10 @@ extends Node2D
 
 signal toggled
 
+var touch_points = {}  # Stores active touch points
+var initial_distance: float = 0.0  # Distance between two fingers at the start of a pinch
+var initial_scale: Vector2  # Initial scale of the node
+
 var chapter_dropdown: OptionButton
 var skulls_dropdown: OptionButton
 var node_dropdown: OptionButton
@@ -78,6 +82,8 @@ var node_options = [
 
 func _ready():
 	
+	initial_scale = self.scale  # Store the initial scale of the node
+
 
 	var display_server = DisplayServer
 	var screen_size = display_server.screen_get_size(0)
@@ -137,6 +143,49 @@ func _ready():
 	populate_options()
 
 # Function to populate dropdowns with items
+
+func _input(event):
+	# Handle touch events
+	if event is InputEventScreenTouch:
+		if event.pressed:
+			# Add touch point
+			touch_points[event.index] = event.position
+		else:
+			# Remove touch point
+			touch_points.erase(event.index)
+			
+	elif event is InputEventScreenDrag:
+		# Update touch point position
+		if event.index in touch_points:
+			touch_points[event.index] = event.position
+		
+	# Handle pinch zoom when two fingers are active
+	if touch_points.size() == 2:
+		var keys = touch_points.keys()
+		var pos1 = touch_points[keys[0]]
+		var pos2 = touch_points[keys[1]]
+		
+		if initial_distance == 0.0:
+			# Set the initial distance when the pinch starts
+			initial_distance = pos1.distance_to(pos2)
+		else:
+			# Calculate the current distance and the scale factor
+			var current_distance = pos1.distance_to(pos2)
+			var scale_factor = current_distance / initial_distance
+			
+			# Apply the scale factor
+			self.scale = initial_scale * scale_factor
+	
+	# Reset scale tracking when touch points reduce to less than 2
+	if touch_points.size() < 2 and initial_distance != 0.0:
+		initial_scale = self.scale
+		initial_distance = 0.0
+
+
+
+
+
+
 func populate_options() -> void:
 	skulls_dropdown.clear()
 	chapter_dropdown.clear()
